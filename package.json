@@ -1,0 +1,32 @@
+{
+  "name": "luktech-md",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "express": "^4.19.2",
+    "dotenv": "^16.4.1",
+    "qrcode": "^1.5.4",
+    "pino": "^8.17.0",
+    "mongoose": "^7.3.2"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
