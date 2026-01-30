@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LUKTECH-MD Pair</title>
+<style>
+body {
+    background:#020617;
+    color:#fff;
+    font-family:Arial;
+    text-align:center;
+    padding-top:40px;
+}
+img {
+    background:#fff;
+    padding:10px;
+    border-radius:10px;
+    margin-top:20px;
+}
+</style>
+</head>
+<body>
+
+<h2>🔗 LUKTECH-MD Pair Device</h2>
+<p>WhatsApp → Linked Devices → Link a Device</p>
+
+<img id="qr" width="260"/>
+
+<script>
+async function loadQR(){
+    const res = await fetch("/qr")
+    const data = await res.json()
+    if(data.success){
+        document.getElementById("qr").src = data.qr
+    }
+}
+setInterval(loadQR, 2000)
+loadQR()
+</script>
+
+</body>
+</html>
